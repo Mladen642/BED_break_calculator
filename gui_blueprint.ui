@@ -561,21 +561,6 @@
        <string>manual</string>
       </property>
      </item>
-     <item>
-      <property name="text">
-       <string>squamous</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>adeno</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>micro</string>
-      </property>
-     </item>
     </widget>
     <widget class="QLabel" name="label_10">
      <property name="geometry">
@@ -710,7 +695,14 @@
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(240, 240, 240);</string>
+   </property>
    <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true">selection-color: rgb(0, 0, 0);
+selection-background-color: rgb(225, 225, 225);</string>
+    </property>
     <property name="title">
      <string>File</string>
     </property>

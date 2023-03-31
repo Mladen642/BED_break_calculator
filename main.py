@@ -94,12 +94,6 @@ class MyWindow(QtWidgets.QMainWindow):
             self.ui.k_value.setText("0.3")
         elif text == "manual":
             self.ui.k_value.setText("0")
-        elif text == "squamous":
-            self.ui.k_value.setText("1")
-        elif text == "adeno":
-            self.ui.k_value.setText("2")
-        elif text == "micro":
-            self.ui.k_value.setText("3")
 
     def date_diff(self):
         break_start = self.ui.dateStart.date()
@@ -140,13 +134,8 @@ class MyWindow(QtWidgets.QMainWindow):
     def update_ab_delivered(self, value):
         self.ui.ab_slider_2.setText(str(value))
 
-
-
-
-
-
     def menu_about(self):
-        QMessageBox.information(self,  "About this app", "This app was developed to assist medical physics team in (re)calculating BED if the break in the treatment occurs.\n\nDesigned and coded by MSc Mladen Babić",)
+        QMessageBox.information(self,  "About this app", "This app was developed to assist medical physics team in (re)calculating BED should the break in the treatment occur.\n\nDesigned and coded by MSc Mladen Babić",)
    
     def restart(self):
         # restart function

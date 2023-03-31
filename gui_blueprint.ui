@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>756</width>
+    <height>383</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,6 +26,7 @@
     <property name="font">
      <font>
       <pointsize>18</pointsize>
+      <weight>75</weight>
       <bold>true</bold>
      </font>
     </property>
@@ -231,6 +232,7 @@
       </property>
       <property name="font">
        <font>
+        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -406,6 +408,7 @@
       </property>
       <property name="font">
        <font>
+        <weight>75</weight>
         <bold>true</bold>
        </font>
       </property>
@@ -426,6 +429,7 @@
      <property name="font">
       <font>
        <pointsize>10</pointsize>
+       <weight>75</weight>
        <bold>true</bold>
       </font>
      </property>
@@ -458,6 +462,7 @@
      <property name="font">
       <font>
        <pointsize>10</pointsize>
+       <weight>50</weight>
        <bold>false</bold>
       </font>
      </property>
@@ -466,6 +471,232 @@
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>450</x>
+      <y>70</y>
+      <width>291</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Break</string>
+    </property>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>21</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Break started</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>51</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Break ended</string>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateStart">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>20</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QDateEdit" name="dateEnd">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>50</y>
+       <width>110</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>131</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>k value</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>130</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>default</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>manual</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>squamous</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>adeno</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>micro</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Time passed:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="deltaDays">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>77</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="k_value">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>131</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0.3</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="delta_days_calc">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>35</y>
+       <width>21</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Δ</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="proliferation_calc">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Proliferation</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="proliferation_result">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>230</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="proliferation_subtitle">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>200</y>
+       <width>151</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <weight>50</weight>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <zorder>groupBox_4</zorder>
    <zorder>groupBox_3</zorder>
    <zorder>line</zorder>
    <zorder>Title</zorder>
@@ -475,8 +706,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>26</height>
+     <width>756</width>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

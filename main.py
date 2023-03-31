@@ -3,6 +3,7 @@ from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import QProcess
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QIcon
+#from PyQt5.QtCore import QDate, Qt
 import constructed_gui
 
 import os
@@ -21,12 +22,16 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.setupUi(self)
 
         #Icon
-        icon = QIcon('img/calc.ico')
+        icon = QIcon('img/break.ico')
         self.setWindowIcon(icon)
 
         #Buttons
         self.ui.Remainder_calc.clicked.connect(self.remainder_calc)
-        
+        self.ui.delta_days_calc.clicked.connect(self.date_diff)
+        self.ui.proliferation_calc.clicked.connect(self.proliferation_calc)
+        #Combobox, break
+        self.ui.comboBox.currentTextChanged.connect(self.k_value_editor)
+
         #Intended BED
         self.ui.n_slider_intended.valueChanged.connect(self.update_n_inteded)
         self.ui.d_slider_intended.valueChanged.connect(self.update_d_inteded)
@@ -84,6 +89,39 @@ class MyWindow(QtWidgets.QMainWindow):
         except:
             QMessageBox.warning(self, "Error", "Something went wrong, please try again.")
 
+    def k_value_editor(self, text):
+        if text == "default":
+            self.ui.k_value.setText("0.3")
+        elif text == "manual":
+            self.ui.k_value.setText("0")
+        elif text == "squamous":
+            self.ui.k_value.setText("1")
+        elif text == "adeno":
+            self.ui.k_value.setText("2")
+        elif text == "micro":
+            self.ui.k_value.setText("3")
+
+    def date_diff(self):
+        break_start = self.ui.dateStart.date()
+        break_end = self.ui.dateEnd.date()
+
+        delta = abs(break_start.toJulianDay() - break_end.toJulianDay())
+        
+        self.ui.deltaDays.setText(f'{delta} day(s)')
+
+        return delta
+    
+    def proliferation_calc(self):
+        
+        delta_days = self.date_diff()
+        k = float(self.ui.k_value.text())
+
+        proliferation_BED = round(k * delta_days,2)
+
+        self.ui.proliferation_subtitle.setText("Proliferated during break:")
+        self.ui.proliferation_result.setText(f'{proliferation_BED} Gy')
+    
+    #Sliders update functions
     def update_n_inteded(self, value):
         self.ui.n_slider.setText(str(value))
 

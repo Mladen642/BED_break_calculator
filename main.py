@@ -29,6 +29,7 @@ class MyWindow(QtWidgets.QMainWindow):
         self.ui.Remainder_calc.clicked.connect(self.remainder_calc)
         self.ui.delta_days_calc.clicked.connect(self.date_diff)
         self.ui.proliferation_calc.clicked.connect(self.proliferation_calc)
+        
         #Combobox, break
         self.ui.comboBox.currentTextChanged.connect(self.k_value_editor)
 

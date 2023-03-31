@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'gui_blueprint.ui'
+# Form implementation generated from reading ui file '.\gui_blueprint.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -228,7 +228,7 @@ class Ui_MainWindow(object):
         self.Title.raise_()
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 756, 21))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 756, 26))
         self.menubar.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
@@ -279,7 +279,7 @@ class Ui_MainWindow(object):
         self.label_8.setText(_translate("MainWindow", "Break ended"))
         self.label_9.setText(_translate("MainWindow", "k value"))
         self.comboBox.setItemText(0, _translate("MainWindow", "default"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "manual"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "custom"))
         self.label_10.setText(_translate("MainWindow", "Time passed:"))
         self.k_value.setText(_translate("MainWindow", "0.3"))
         self.delta_days_calc.setText(_translate("MainWindow", "Δ"))

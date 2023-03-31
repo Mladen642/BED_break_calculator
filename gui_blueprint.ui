@@ -558,7 +558,7 @@
      </item>
      <item>
       <property name="text">
-       <string>manual</string>
+       <string>custom</string>
       </property>
      </item>
     </widget>
@@ -692,7 +692,7 @@
      <x>0</x>
      <y>0</y>
      <width>756</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
    <property name="styleSheet">

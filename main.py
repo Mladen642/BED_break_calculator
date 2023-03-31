@@ -92,7 +92,7 @@ class MyWindow(QtWidgets.QMainWindow):
     def k_value_editor(self, text):
         if text == "default":
             self.ui.k_value.setText("0.3")
-        elif text == "manual":
+        elif text == "custom":
             self.ui.k_value.setText("0")
 
     def date_diff(self):

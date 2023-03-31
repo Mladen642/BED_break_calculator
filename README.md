@@ -1,4 +1,4 @@
-# BED_break_calculator
+# BED break calculator
 
 Simple and intuitive tool for (re)calculating BED in radiotherapy treatments should the break occur.
 

@@ -3,7 +3,6 @@ from PyQt5.QtWidgets import QApplication, QMessageBox
 from PyQt5.QtCore import QProcess
 from PyQt5 import QtWidgets
 from PyQt5.QtGui import QIcon
-#from PyQt5.QtCore import QDate, Qt
 import constructed_gui
 
 import os

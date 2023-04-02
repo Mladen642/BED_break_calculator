@@ -112,7 +112,7 @@ class MyWindow(QtWidgets.QMainWindow):
 
         proliferation_BED = round(k * delta_days,2)
 
-        self.ui.proliferation_subtitle.setText("Proliferated during break:")
+        self.ui.proliferation_subtitle.setText("Proliferation bonus:")
         self.ui.proliferation_result.setText(f'{proliferation_BED} Gy')
     
     #Sliders update functions
